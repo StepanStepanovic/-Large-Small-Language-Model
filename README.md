@@ -39,34 +39,36 @@ Alternatively, if you don't have pytorch installed, open model_training.ipynb in
 ### 3. Generate Text Using the Pre-trained Model
 To generate text using the pre-trained model, run:
 
-bash
-Copy code
+```bash
 python trained.py
+```
 The output will display generated text based on the learned patterns.
 
 ### 4. Modify Hyperparameters
 You can modify the hyperparameters in training.py or model_training.ipynb to experiment with different configurations. Key hyperparameters include:
 
-batch_size
-learning_rate
-dropout
-num_layers
-num_heads
-Requirements
+`batch_size`
+`learning_rate`
+`dropout`
+`num_layers`
+`num_heads`
+
+### Requirements
 Python 3.8+
 PyTorch
 Jupyter Notebook (optional, for using the notebook)
 Additional packages: numpy, torch, tqdm (installable via requirements.txt)
 Install all dependencies using:
 
-bash
-Copy code
+```bash
 pip install -r requirements.txt
-Key Features
+```
+
+### Key Features
 Fully implemented Transformer-based model.
 Configurable training pipeline.
 Pre-trained model available for text generation.
 Designed for educational purposes, following best practices in NLP and deep learning.
 Credits
-This project is inspired by the work of Andrej Karpathy and serves as a practical exercise for the 14x050 Deep Learning course at the University of Geneva.
+This project is inspired by the work of [Andrej Karpathy] (https://github.com/karpathy) and serves as a practical exercise for the 14x050 Deep Learning course at the University of Geneva.
 
