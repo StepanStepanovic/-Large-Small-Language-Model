@@ -1,0 +1,12 @@
+# Python version
+python>=3.8
+
+# PyTorch (CPU version)
+torch>=2.0.0
+
+# For GPU version (comment out the CPU version above if using this)
+# torch>=2.0.0+cu118 -f https://download.pytorch.org/whl/torch_stable.html
+
+# Libraries
+torchvision>=0.15.0
+numpy>=1.23.0
