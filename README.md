@@ -69,7 +69,8 @@ Fully implemented Transformer-based model.
 Configurable training pipeline.
 Pre-trained model available for text generation.
 Designed for educational purposes, following best practices in NLP and deep learning.
-Credits
+
+### Credits
 This project is inspired by the work of [Andrej Karpathy](https://github.com/karpathy) and his [YouTube lecture](https://www.youtube.com/watch?v=kCc8FmEb1nY), which served as excellent resources for understanding and implementing this transformer model.
 
 
