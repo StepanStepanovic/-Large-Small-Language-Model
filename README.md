@@ -8,7 +8,7 @@ This repository contains a small text-generation project based on a Transformer 
 - A Jupyter Notebook showcasing the full training pipeline.
 - Includes training logs, loss values, and generated text 
 - Requires `input.txt` (Tiny Shakespeare dataset)
-- 
+
 ### 2. `training.py`
 - The standalone Python script for training the model.
 - Contains the same logic as `model_training.ipynb` but designed for running directly from the command line.
@@ -16,7 +16,8 @@ This repository contains a small text-generation project based on a Transformer 
 ### 3. `trained.py`
 - A script for loading the pre-trained model (`model.pt`) and generating text.
 - Ideal for users who want to test the model without retraining.
-- Requires `input.txt` (Tiny Shakespeare dataset) and `model.pt` (included in the repository)
+- Requires `input.txt` (Tiny Shakespeare dataset) and `model.pt`, which can be downlaoded from [Github Release](https://github.com/StepanStepanovic/Large-Small-Language-Model/releases/tag/v1.0).
+
 
 ## Dataset
 The model is trained on the **Tiny Shakespeare** dataset, which is a simple and compact text dataset used frequently in NLP experiments. It is included in the repository.
