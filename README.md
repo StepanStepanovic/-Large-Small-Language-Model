@@ -6,18 +6,17 @@ This repository contains a small text-generation project based on a Transformer 
 
 ### 1. `model_training.ipynb`
 - A Jupyter Notebook showcasing the full training pipeline.
-- Includes training logs, loss values, and generated text at different training steps.
-- Provides a step-by-step overview for understanding the training process.
-
+- Includes training logs, loss values, and generated text 
+- Requires `input.txt` (Tiny Shakespeare dataset)
+- 
 ### 2. `training.py`
 - The standalone Python script for training the model.
 - Contains the same logic as `model_training.ipynb` but designed for running directly from the command line.
-- Users can modify hyperparameters and dataset paths to train their own models.
 
 ### 3. `trained.py`
 - A script for loading the pre-trained model (`model.pt`) and generating text.
-- No training required; simply loads the trained model and generates text.
 - Ideal for users who want to test the model without retraining.
+- Requires `input.txt` (Tiny Shakespeare dataset) and `model.pt` (included in the repository)
 
 ## Dataset
 The model is trained on the **Tiny Shakespeare** dataset, which is a simple and compact text dataset used frequently in NLP experiments. It is included in the repository.
@@ -29,15 +28,15 @@ The model is trained on the **Tiny Shakespeare** dataset, which is a simple and 
 git clone https://github.com/your_username/text-generation-transformer.git
 cd text-generation-transformer
 ```
-2. Train the Model
+### 2. Train the Model
 To train the model from scratch, run:
 
 bash
 Copy code
 python training.py
-Alternatively, open model_training.ipynb in Jupyter Notebook to view and experiment with the training process.
+Alternatively, if you don't have pytorch installed, open model_training.ipynb in google Colab  to view and experiment with the training process.
 
-3. Generate Text Using the Pre-trained Model
+### 3. Generate Text Using the Pre-trained Model
 To generate text using the pre-trained model, run:
 
 bash
@@ -45,7 +44,7 @@ Copy code
 python trained.py
 The output will display generated text based on the learned patterns.
 
-4. Modify Hyperparameters
+### 4. Modify Hyperparameters
 You can modify the hyperparameters in training.py or model_training.ipynb to experiment with different configurations. Key hyperparameters include:
 
 batch_size
@@ -70,10 +69,4 @@ Pre-trained model available for text generation.
 Designed for educational purposes, following best practices in NLP and deep learning.
 Credits
 This project is inspired by the work of Andrej Karpathy and serves as a practical exercise for the 14x050 Deep Learning course at the University of Geneva.
-
-Copy code
-
-
-
-
 
